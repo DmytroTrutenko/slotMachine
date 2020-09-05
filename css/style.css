@@ -45,14 +45,20 @@ body {
   height: 100%;
   border: 2px solid black;
 }
-.wrap_reels .reel_item_inner {
+.wrap_reels .reel_item_left, .wrap_reels .reel_item_center, .wrap_reels .reel_item_right {
   overflow: hidden;
   position: relative;
   width: 100%;
   height: calc(100% + 450px);
   top: -450px;
 }
-.wrap_reels .reel_item_inner .reel_img {
+.wrap_reels .reel_item_left .reel_img_l,
+.wrap_reels .reel_item_left .reel_img_c,
+.wrap_reels .reel_item_left .reel_img_r, .wrap_reels .reel_item_center .reel_img_l,
+.wrap_reels .reel_item_center .reel_img_c,
+.wrap_reels .reel_item_center .reel_img_r, .wrap_reels .reel_item_right .reel_img_l,
+.wrap_reels .reel_item_right .reel_img_c,
+.wrap_reels .reel_item_right .reel_img_r {
   transition: all ease 0.1s;
   position: absolute;
   left: 0;
@@ -61,6 +67,16 @@ body {
   width: 300px;
   height: 300px;
   object-fit: contain;
+}
+
+.btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
