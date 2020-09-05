@@ -32,4 +32,35 @@ body {
   object-fit: contain;
 }
 
+.wrap_reels {
+  background: #ffffff;
+  margin: auto;
+  width: 900px;
+  flex-wrap: wrap;
+  height: 600px;
+}
+.wrap_reels .reel_item {
+  overflow: hidden;
+  width: 300px;
+  height: 100%;
+  border: 2px solid black;
+}
+.wrap_reels .reel_item_inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: calc(100% + 450px);
+  top: -450px;
+}
+.wrap_reels .reel_item_inner .reel_img {
+  transition: all ease 0.1s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=style.css.map */
